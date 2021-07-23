@@ -1,12 +1,16 @@
 import Head from 'next/head';
-import React from "react";
+import * as React from "react";
+import * as ReactDOM from "react-dom";
 import Menu from '../components/Menu';
+import Carousel from '../components/Carousel'
 import {Jumbotron,Container} from 'reactstrap';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {fas} from '@fortawesome/free-solid-svg-icons';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import VideoPlayer from '../components/Video';
 library.add(fas)
+
 
 export default function Home() {
   return (
@@ -17,6 +21,7 @@ export default function Home() {
         <meta name='author' content="Aline"/>
       </Head>
       <Menu/>
+      <Carousel/>
       <Jumbotron fluid className="servicos">
         <style>{`
           .servicos{

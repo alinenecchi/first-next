@@ -14,3 +14,14 @@ a {
 * {
   box-sizing: border-box;
 }
+.video {
+ display: flex;
+ justify-content: center;
+}
+.video-react-video{
+  width: 80rem;
+}
+.video-react-big-play-button {
+  border: 2px solid rebeccapurple;
+  position: center;
+}
